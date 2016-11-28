@@ -47,6 +47,7 @@ Median_Steps <- median(Steps_Day$steps)
 Median_Steps
 10765
 ```
+Mean Steps = 10766.19 and Median Steps = 10765
 
 ## Create Steps Interval
 ```{Steps Interval}
@@ -64,12 +65,15 @@ Max_Interval <- Steps_Interval[which.max(Steps_Interval$steps),1]
 Max_Interval
 835
 ```
+Maximum number of steps = 835
+
 ## Count number of N/As
 ```{Count N/A}
 ActData_NA <- sum(!complete.cases(Activity_Data))
 ActData_NA
 2304
 ```
+Total number of cases that were set as N/As = 2304
 
 ## Update N/As
 ```{Update N/As}
@@ -94,6 +98,8 @@ Median_Steps <- median(Steps_Day$steps)
 Median_Steps
 10766.19
 ```
+Mean Steps = 10766.19 and Median Steps now equals 10766.19
+
 
 ## Re-Create plot1 to implement updated Median values
 ```{Re-create Plot 1, echo=TRUE}

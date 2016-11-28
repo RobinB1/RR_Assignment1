@@ -157,6 +157,7 @@ Mean_Steps
 Median_Steps &lt;- median(Steps_Day$steps)
 Median_Steps
 10765</code></pre>
+<p>Mean Steps = 10766.19 and Median Steps = 10765</p>
 </div>
 <div id="create-steps-interval" class="section level2">
 <h2>Create Steps Interval</h2>
@@ -171,12 +172,14 @@ Median_Steps
 <pre class="maximum"><code>Max_Interval &lt;- Steps_Interval[which.max(Steps_Interval$steps),1]
 Max_Interval
 835</code></pre>
+<p>Maximum number of steps = 835</p>
 </div>
 <div id="count-number-of-nas" class="section level2">
 <h2>Count number of N/As</h2>
 <pre class="count"><code>ActData_NA &lt;- sum(!complete.cases(Activity_Data))
 ActData_NA
 2304</code></pre>
+<p>Total number of cases that were set as N/As = 2304</p>
 </div>
 <div id="update-nas" class="section level2">
 <h2>Update N/As</h2>
@@ -198,6 +201,7 @@ Mean_Steps
 Median_Steps &lt;- median(Steps_Day$steps)
 Median_Steps
 10766.19</code></pre>
+<p>Mean Steps = 10766.19 and Median Steps now equals 10766.19</p>
 </div>
 <div id="re-create-plot1-to-implement-updated-median-values" class="section level2">
 <h2>Re-Create plot1 to implement updated Median values</h2>
